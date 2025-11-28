@@ -37,6 +37,12 @@ a {
   color: inherit;
 }
 
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -48,10 +54,7 @@ header {
   padding: 15px 0;
 }
 
-header > div {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
+header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,10 +218,6 @@ header > div {
   margin-top: 70px;
 }
 
-.bolt-theme > div {
-  max-width: 1100px;
-  margin: 0 auto;
-}
 
 .bolt-theme h1 {
   font-size: 90px;
@@ -241,9 +240,7 @@ header > div {
   color: #fff;
 }
 
-.what-we-can-do > div {
-  max-width: 1100px;
-  margin: 0 auto;
+.what-we-can-do .wrapper {
   display: flex;
 }
 
@@ -287,10 +284,6 @@ header > div {
   padding: 60px 0 70px;
 }
 
-.latest-work > div {
-  max-width: 1100px;
-  margin: 0 auto;
-}
 
 .latest-work h2 {
   font-size: 24px;
@@ -365,11 +358,6 @@ header > div {
   padding: 70px 0 100px;
 }
 
-.our-skills > div {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 .our-skills h2 {
   font-size: 24px;
@@ -407,7 +395,7 @@ header > div {
   padding: 200px 0;
 }
 
-.sns > div {
+.sns .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -444,11 +432,6 @@ footer {
   text-align: center;
 }
 
-footer > div {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 footer p {
   font-size: 14px;
@@ -463,13 +446,7 @@ footer i {
 
 /* RESPONSIVE - TABLET */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  header > div,
-  .bolt-theme > div,
-  .what-we-can-do > div,
-  .latest-work > div,
-  .our-skills > div,
-  .sns > div,
-  footer > div {
+  .wrapper {
     width: 97%;
     max-width: 97%;
   }
@@ -490,7 +467,7 @@ footer i {
     padding: 50px 0 25px 0;
   }
 
-  .what-we-can-do > div {
+  .what-we-can-do .wrapper {
     flex-direction: column;
     gap: 20px;
     text-align: center;
@@ -541,13 +518,7 @@ footer i {
 
 /* RESPONSIVE - MOBILE */
 @media screen and (max-width: 767px) {
-  header > div,
-  .bolt-theme > div,
-  .what-we-can-do > div,
-  .latest-work > div,
-  .our-skills > div,
-  .sns > div,
-  footer > div {
+  .wrapper {
     width: 97%;
     max-width: 97%;
   }
@@ -599,7 +570,7 @@ footer i {
     padding: 50px 0 25px 0;
   }
 
-  .what-we-can-do > div {
+  .what-we-can-do .wrapper {
     flex-direction: column;
     gap: 20px;
     text-align: center;
@@ -666,7 +637,7 @@ footer i {
     padding: 50px 0;
   }
 
-  .sns > div {
+  .sns .wrapper {
     padding: 0 0;
   }
 
