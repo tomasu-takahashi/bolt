@@ -92,6 +92,10 @@ header .wrapper {
   color: #333;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .bolt-theme {
   background: #f2f2f2;
   color: #333;
@@ -292,7 +296,7 @@ header .wrapper {
   justify-content: center;
   font-size: 40px;
   color: #74cfae;
-  transition: color 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon i {
@@ -301,6 +305,7 @@ header .wrapper {
 
 .social-icon:hover {
   background-color: #fff;
+  transform: scale(1.1);
 }
 
 footer {
@@ -327,18 +332,6 @@ footer i {
   .wrapper {
     width: 97%;
     max-width: 97%;
-  }
-
-  .bolt-theme {
-    padding: 200px 0;
-  }
-
-  .bolt-theme h1 {
-    font-size: 70px;
-  }
-
-  .bolt-theme p {
-    font-size: 24px;
   }
 
   .what-we-can-do {
