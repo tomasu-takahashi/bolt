@@ -292,6 +292,7 @@ header .wrapper {
   justify-content: center;
   font-size: 40px;
   color: #74cfae;
+  transition: color 0.3s ease;
 }
 
 .social-icon i {
